@@ -14,7 +14,7 @@ The exploration algorithm is designed to:
 
 To see the exploration process in action, click the image below to watch the demonstration video on YouTube:
 
-[![Frontier Exploration Demo](./path_to_thumbnail_image.png)](https://www.youtube.com/watch?v=VYoRoqiOCD8&ab_channel=JoaquinColoma)
+[![Frontier Exploration Demo](./media/thumbnail.png)](https://www.youtube.com/watch?v=VYoRoqiOCD8&ab_channel=JoaquinColoma)
 
 
 ## Dependencies

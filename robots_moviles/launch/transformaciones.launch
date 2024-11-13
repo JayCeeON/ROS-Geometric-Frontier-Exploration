@@ -1,0 +1,4 @@
+<launch>
+    <node name="stp1" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 1 base_footprint base_scan"/>
+    <node name="stp2" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 1 base_footprint base_camera"/>
+</launch>

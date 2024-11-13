@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="my_mesh">
+      <pose>0 0 0  1.5708 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://meshes/estudio.obj</uri><scale>0.015 0.015 0.015</scale></mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <mesh><uri>file://meshes/estudio.obj</uri><scale>0.015 0.015 0.015</scale></mesh>
+          </geometry>
+          <laser_retro>0.9</laser_retro>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.5</mu>
+                <mu2>0.5</mu2>
+              </ode>
+            </friction>
+            <restitution>0.2</restitution>
+          </surface>
+        </collision>
+      </link>
+    </model>
+  </world>
+</sdf>
